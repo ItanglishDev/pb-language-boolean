@@ -9,8 +9,8 @@ let myVar = true;
 console.log(!myVar ? "good morning" : "good evening");
 
 let firstName = "" || "John" || 0;
-let emptyStr = ("" && false) || "Hello World";
+let emptyStr = "" && false && "Hello World";
 let zero = ("" && false) || 0;
 let seven = 75 && "nine" && 7;
 
-console.log(firstName, zero, emptyStr, seven);
+console.log(firstName, emptyStr, zero, seven);
